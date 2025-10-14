@@ -1,155 +1,233 @@
+/* Reset general para todos los elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0; /* Elimina los rellenos por defecto */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
 }
 
+/* Estilos globales para el cuerpo de la página */
 body {
-  font-family: 'Cardo', serif;
-  color: #4d3b2b;
-  background-color: #fdfaf8;
-  scroll-behavior: smooth;
+  font-family: 'Cardo', serif; /* Fuente principal */
+  color: #4d3b2b; /* Color del texto */
+  background-color: #fdfaf8; /* Color de fondo */
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces internos */
 }
 
-/* HEADER */
+/* Estilos para el encabezado fijo */
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(253, 250, 248, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.8em 2em;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  z-index: 10;
+  position: fixed; /* Fija el encabezado en la parte superior */
+  top: 0; /* Posición superior */
+  width: 100%; /* Ancho completo */
+  background: rgba(253, 250, 248, 0.9); /* Color de fondo con transparencia */
+  display: flex; /* Usa flexbox para el diseño */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 0.8em 2em; /* Relleno interno */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Transición suave para cambios de estilo */
+  z-index: 10; /* Prioridad de apilamiento para que esté por encima de otros elementos */
 }
 
+/* Estilos para el encabezado cuando se hace scroll */
 header.scrolled {
-  background: rgba(253, 250, 248, 0.8);
-  backdrop-filter: blur(5px);
+  background: rgba(253, 250, 248, 0.8); /* Color de fondo con menos transparencia */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque en el fondo */
 }
 
+/* Estilos para el logo */
 .logo {
-  height: 60px;
+  height: 60px; /* Altura del logo */
 }
 
+/* Estilos para los enlaces de navegación */
 nav a {
-  margin-left: 1.5em;
-  text-decoration: none;
-  color: #a06f51;
-  font-weight: 700;
-  transition: color 0.3s;
+  margin-left: 1.5em; /* Margen izquierdo */
+  text-decoration: none; /* Elimina el subrayado */
+  color: #a06f51; /* Color del texto */
+  font-weight: 700; /* Grosor de la fuente */
+  transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 
+/* Estilos para los enlaces de navegación al pasar el cursor */
 nav a:hover {
-  color: #7c533d;
+  color: #7c533d; /* Cambia el color del texto */
 }
 
-/* HERO */
+/* Estilos para la sección hero (portada) */
 .hero {
-  height: 100vh;
-  background: url("imagenes/producto1.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  height: 100vh; /* Altura igual al 100% de la ventana */
+  background: url("imagenes/producto1.jpg") center/cover no-repeat; /* Imagen de fondo centrada y cubriendo todo el espacio */
+  display: flex; /* Usa flexbox para el diseño */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  color: white; /* Color del texto */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra al texto para mejor legibilidad */
 }
 
+/* Estilos para el título en la sección hero */
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 0.3em;
+  font-size: 3rem; /* Tamaño de fuente */
+  margin-bottom: 0.3em; /* Margen inferior */
 }
 
+/* Estilos para el párrafo en la sección hero */
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Tamaño de fuente */
 }
 
-/* SECTIONS */
+/* Estilos generales para las secciones */
 .section {
-  padding: 6em 2em;
-  text-align: center;
+  padding: 6em 2em; /* Relleno interno */
+  text-align: center; /* Alineación del texto al centro */
 }
 
+/* Estilos para los títulos de las secciones */
 .section h2 {
-  color: #a06f51;
-  margin-bottom: 1em;
-  font-size: 2rem;
+  color: #a06f51; /* Color del texto */
+  margin-bottom: 1em; /* Margen inferior */
+  font-size: 2rem; /* Tamaño de fuente */
 }
 
+/* Estilos para el párrafo en la sección "Sobre Nosotras" */
 .about p {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
+  max-width: 700px; /* Ancho máximo */
+  margin: 0 auto; /* Centra el párrafo */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
 }
 
-/* GALLERY */
+/* Estilos para la cuadrícula de la galería */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.2em;
-  margin-top: 2em;
+  display: grid; /* Usa grid para el diseño */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas responsivas */
+  gap: 1.2em; /* Espacio entre elementos */
+  margin-top: 2em; /* Margen superior */
 }
 
+/* Estilos para las imágenes de la galería */
 .gallery-grid img {
-  width: 100%;
-  height: 200px; /* Altura fija para todas */
+  width: 100%; /* Ancho completo */
+  height: 200px; /* Altura fija */
   object-fit: cover; /* Ajusta la imagen sin deformarla */
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
 }
 
+/* Estilos para las imágenes de la galería al pasar el cursor */
 .gallery-grid img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transform: scale(1.03); /* Efecto de zoom suave */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
 }
 
-
-/* CONTACT */
+/* Estilos para la información de contacto */
 .contact-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 1em;
+  display: flex; /* Usa flexbox para el diseño */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  gap: 10px; /* Espacio entre elementos */
+  margin-top: 1em; /* Margen superior */
 }
 
+/* Estilos para el logo de WhatsApp */
 .wpp-logo {
-  width: 30px;
+  width: 30px; /* Ancho del logo */
 }
 
-/* FOOTER */
+/* Estilos para el pie de página */
 footer {
-  background: #a06f51;
-  color: white;
-  text-align: center;
-  padding: 1.5em 0;
-  font-size: 0.9rem;
+  background: #a06f51; /* Color de fondo */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  padding: 1.5em 0; /* Relleno interno */
+  font-size: 0.9rem; /* Tamaño de fuente */
 }
 
-/* RESPONSIVE */
+/* Estilos responsivos para pantallas pequeñas */
 @media (max-width: 768px) {
   nav a {
-    margin-left: 1em;
-    font-size: 0.9rem;
+    margin-left: 1em; /* Margen izquierdo reducido */
+    font-size: 0.9rem; /* Tamaño de fuente reducido */
   }
-
   .hero-text h1 {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* Tamaño de fuente reducido */
   }
 }
 
-/* ANIMACIONES DE SCROLL */
+/* Estilos para la animación de aparición al hacer scroll */
 .fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0; /* Elemento invisible inicialmente */
+  transform: translateY(40px); /* Desplazamiento vertical inicial */
+  transition: opacity 1s ease-out, transform 1s ease-out; /* Transición suave para la animación */
 }
 
+/* Estilos para la animación cuando el elemento es visible */
 .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1; /* Elemento visible */
+  transform: translateY(0); /* Sin desplazamiento vertical */
+}
+
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.lightbox .close:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+/* FLECHAS DE NAVEGACIÓN */
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.arrow:hover {
+  color: #a06f51;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.prev {
+  left: 40px;
+}
+
+.arrow.next {
+  right: 40px;
 }
 

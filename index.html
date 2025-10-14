@@ -1,61 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punto de Luz Deco</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>  <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es">  <!-- Inicia el documento HTML y define el idioma como español -->
+<head>  <!-- Sección de metadatos y recursos externos -->
+  <meta charset="UTF-8">  <!-- Define la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ajusta la vista para dispositivos móviles -->
+  <title>Punto de Luz</title>  <!-- Título de la pestaña del navegador -->
+  <link rel="stylesheet" href="style.css">  <!-- Enlace al archivo CSS externo -->
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">  <!-- Importa la fuente "Cardo" de Google Fonts -->
 </head>
-<body>
-  <header id="header">
-    <img src="imagenes/punto_de_luz_transparente.png" alt="Logo Punto de Luz" class="logo">
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotras">Sobre Nosotras</a>
-      <a href="#galeria">Galería</a>
-      <a href="#contacto">Contacto</a>
+<body>  <!-- Cuerpo del documento, donde va el contenido visible -->
+  <header id="header">  <!-- Encabezado de la página con un ID para referencia -->
+    <img src="imagenes/punto_de_luz_transparente.png" alt="Logo Punto de Luz" class="logo">  <!-- Logo del sitio -->
+    <nav>  <!-- Barra de navegación -->
+      <a href="#inicio">Inicio</a>  <!-- Enlace al inicio de la página -->
+      <a href="#nosotras">Sobre Nosotras</a>  <!-- Enlace a la sección "Sobre Nosotras" -->
+      <a href="#galeria">Galería</a>  <!-- Enlace a la sección "Galería" -->
+      <a href="#contacto">Contacto</a>  <!-- Enlace a la sección "Contacto" -->
     </nav>
   </header>
-
-  <section id="inicio" class="hero fade-in">
-    <div class="hero-text">
-      <h1>Punto de Luz Deco</h1>
-      <p>Decoraciones hechas con amor y dedicación.</p>
+  <section id="inicio" class="hero fade-in">  <!-- Sección de inicio con clases para estilos y animación -->
+    <div class="hero-text">  <!-- Contenedor del texto principal -->
+      <h1>Punto de Luz Deco</h1>  <!-- Título principal -->
+      <p>Decoraciones hechas con amor y dedicación.</p>  <!-- Descripción breve -->
     </div>
   </section>
-
-  <section id="nosotras" class="section about fade-in">
-    <h2>Sobre Nosotras</h2>
-    <p>Somos un emprendimiento familiar dedicado a crear objetos de decoración que llenan los espacios de calidez y armonía. 
+  <section id="nosotras" class="section about fade-in">  <!-- Sección "Sobre Nosotras" -->
+    <h2>Sobre Nosotras</h2>  <!-- Título de la sección -->
+    <p>Somos un emprendimiento familiar dedicado a crear objetos de decoración que llenan los espacios de calidez y armonía.  <!-- Texto descriptivo -->
     Cada pieza está hecha con amor, dedicación y un toque artesanal que las hace únicas.</p>
   </section>
-
-  <section id="galeria" class="section gallery">
-    <h2>Galería</h2>
-    <div class="gallery-grid">
-      <img src="imagenes/producto1.jpg" alt="Producto 1">
-      <img src="imagenes/producto2.jpg" alt="Producto 2">
-      <img src="imagenes/producto3.jpg" alt="Producto 3">
-      <img src="imagenes/producto4.jpg" alt="Producto 4">
-      <img src="imagenes/producto5.jpg" alt="Producto 5">
-      <img src="imagenes/producto6.jpg" alt="Producto 6">
+  <section id="galeria" class="section gallery">  <!-- Sección "Galería" -->
+    <h2>Galería</h2>  <!-- Título de la sección -->
+    <div class="gallery-grid">  <!-- Contenedor de las imágenes en forma de cuadrícula -->
+      <img src="imagenes/producto1.jpg" alt="Producto 1">  <!-- Imagen del producto 1 -->
+      <img src="imagenes/producto2.jpg" alt="Producto 2">  <!-- Imagen del producto 2 -->
+      <img src="imagenes/producto3.jpg" alt="Producto 3">  <!-- Imagen del producto 3 -->
+      <img src="imagenes/producto4.jpg" alt="Producto 4">  <!-- Imagen del producto 4 -->
+      <img src="imagenes/producto5.jpg" alt="Producto 5">  <!-- Imagen del producto 5 -->
+      <img src="imagenes/producto6.jpg" alt="Producto 6">  <!-- Imagen del producto 6 -->
     </div>
   </section>
 
-  <section id="contacto" class="section contact fade-in">
-    <h2>Contacto</h2>
-    <p>Podés escribirnos a nuestro WhatsApp:</p>
-    <div class="contact-info">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wpp-logo">
-      <span>+54 9 261 555-5555</span>
+  <section id="contacto" class="section contact fade-in">  <!-- Sección "Contacto" -->
+    <h2>Contacto</h2>  <!-- Título de la sección -->
+    <p>Podés escribirnos a nuestro WhatsApp:</p>  <!-- Texto descriptivo -->
+    <div class="contact-info">  <!-- Contenedor de la información de contacto -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wpp-logo">  <!-- Logo de WhatsApp -->
+      <span>+54 9 261 555-5555</span>  <!-- Número de contacto -->
     </div>
   </section>
-
-  <footer>
-    <p>© 2025 Punto de Luz Deco | Todos los derechos reservados</p>
+  <footer>  <!-- Pie de página -->
+    <p>© 2025 Punto de Luz Deco | Todos los derechos reservados</p>  <!-- Información de derechos de autor -->
   </footer>
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <span class="arrow prev">&#10094;</span>
+  <img class="lightbox-img" alt="Imagen ampliada">
+  <span class="arrow next">&#10095;</span>
+</div>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script>  <!-- Enlace al archivo JavaScript externo -->
 </body>
 </html>
