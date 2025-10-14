@@ -50,7 +50,7 @@ nav a:hover {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("imagenes/fondotela.jpg") center/cover no-repeat;
+  background: url("imagenes/producto1.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,6 +95,8 @@ nav a:hover {
 
 .gallery-grid img {
   width: 100%;
+  height: 200px; /* Altura fija para todas */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -103,6 +105,7 @@ nav a:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+
 
 /* CONTACT */
 .contact-info {
